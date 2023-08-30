@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Kanit:ital,wght@1,100&family=Lobster&family=Merriweather:wght@300&family=Phudu:wght@400;700&family=Tilt+Prism&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.full {
+    background: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    font-family: 'Barlow', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 13%;
+}
+
+.logo img {
+    max-width: 100%;
+    display: block;
+}
+
+.list {
+    width: 70%;
+}
+
+.list ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.list ul li {
+    list-style: none;
+    padding: 10px 0;
+    margin-top: 25px;
+}
+
+.list ul li a {
+    color: #eeebbdeb;
+    margin: 0 30px;
+    text-decoration: none;
+    font-size: 19px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.795);
+    position: relative;
+    transition: 0.5s;
+}
+
+.list ul li:hover a {
+    color: rgb(255, 238, 4);
+}
+
+.list ul li a::after {
+    content: "";
+    height: 2px;
+    width: 16px;
+    display: none;
+    background-color: rgb(170, 255, 0);
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+.list ul li a:hover::after {
+    display: block;
+}
+
+.menu {
+    display: none;
+    padding: 10px 0;
+    margin-top: 25px;
+}
+
+.menu a {
+    color: #fdffebeb;
+    margin: 0 30px;
+    text-decoration: none;
+    font-size: 19px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.795);
+}
+
+
+/* Maddle part */
+
+.maddle {
+    width: 450px;
+    height: 240px;
+    margin-top: 70px;
+}
+
+.maddle h2 {
+    font-size: 50px;
+    color: gold;
+    text-shadow: 1px 1px 2px red;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.maddle h2::before {
+    content: "";
+    height: 2px;
+    width: 70px;
+    background-color: yellow;
+    display: block;
+    position: absolute;
+    top: -80px;
+    left: 0;
+}
+
+.maddle a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid goldenrod;
+    padding: 5px 20px;
+    margin-left: 27px;
+    border-radius: 19px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.maddle a:hover {
+    color: rgba(9, 255, 0, 0.664);
+    text-decoration: underline;
+    background-color: rgba(204, 204, 8, 0.267);
+}
+
+
+/* End parts */
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 70px 0 30px;
+    position: relative;
+}
+
+.items {
+    width: 32%;
+    border: 1px solid black;
+    background-color: rgb(16 14 14 / 85%);
+    padding: 64px 24px;
+    font-style: italic;
+    color: #eb531aa8;
+    box-sizing: border-box;
+}
+
+.beffore1 {
+    position: relative;
+}
+
+.beffore1::before {
+    content: " ";
+    height: 14px;
+    width: 2px;
+    background-color: rgba(255, 217, 0, 0.575);
+    display: block;
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.beffore2 {
+    position: relative;
+}
+
+.beffore2::before {
+    content: " ";
+    height: 14px;
+    width: 200px;
+    background-color: rgba(255, 217, 0, 0.575);
+    display: block;
+    position: absolute;
+    bottom: -5%;
+    right: -0.4%;
+}
+
+.beffore2::after {
+    content: " ";
+    height: 70px;
+    width: 14px;
+    background-color: rgba(255, 217, 0, 0.575);
+    display: block;
+    position: absolute;
+    bottom: -5%;
+    right: -4%;
+}
+
+span {
+    font-size: 30px;
+}
+
+.span1 {
+    color: rgb(9 241 93 / 83%);
+}
+
+.span2 {
+    color: rgb(243 243 115 / 77%);
+}
+
+.span3 {
+    color: #77ff00bf;
+}
+
+.org {
+    background-color: #eb531aa8;
+    color: #000000;
+}
+
+h4 {
+    font-size: 21px;
+    font-style: normal;
+    margin: 14px 0 3px;
+    color: rgb(238, 255, 0);
+}
+
+.white {
+    color: rgb(255, 255, 255);
+}
+
+.same {
+    color: #fff;
+}
+
+.pa {
+    color: rgb(238, 255, 0);
+}
+
+
+/* Media supported */
+
+@media(max-width:1045px) {
+    .list {
+        width: 80%;
+    }
+    .list ul li {
+        padding: 2px 0;
+    }
+    .list ul li a {
+        margin: 0px 21px;
+    }
+}
+
+@media(max-width:900px) {
+    .logo {
+        width: 18%;
+    }
+    .list {
+        width: 75%;
+    }
+    .list ul li a {
+        margin: 0px 16px;
+        font-size: 17px;
+    }
+    .list ul li {
+        padding: 14px 0;
+    }
+}
+
+@media(max-width:780px) {
+    .list {
+        width: 75%;
+    }
+    .list ul li a {
+        margin: 0px 10px;
+        font-size: 14px;
+    }
+    .list ul li {
+        padding: 3px 0;
+    }
+}
+
+@media(max-width:600px) {
+    .logo {
+        width: 24%;
+    }
+    .menu {
+        display: block;
+    }
+    .list {
+        display: none;
+    }
+    .maddle {
+        width: 300px;
+    }
+    .maddle h2 {
+        font-size: 35px;
+    }
+    .maddle a {
+        font-size: 10px;
+    }
+    .items {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .beffore2::before {
+        bottom: -5.6%;
+        right: 0%;
+    }
+    .beffore2::after {
+        bottom: -5.8%;
+        right: -3.1%;
+    }
+}
+
+@media(max-width:499px) {
+    .logo {
+        width: 30%;
+    }
+    .list {
+        display: none;
+    }
+    .menu {
+        margin-top: 15px;
+    }
+}
